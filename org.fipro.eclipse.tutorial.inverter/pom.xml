@@ -13,8 +13,22 @@
 	<properties>
 		<sdk>/Users/jankihari/software/javafx-sdk-17.0.9/</sdk>
 	</properties>
-	
 
+	<repositories>
+		<repository>
+			<name>BestSolution e(fx)clipse releases</name>
+			<id>efxclipse-releases</id>
+			<url>https://maven.bestsolution.at/efxclipse-releases/</url>
+		</repository>
+		<repository>
+			<name>BestSolution e(fx)clipse snapshots</name>
+			<id>efxclipse-snapshots</id>
+			<url>https://maven.bestsolution.at/efxclipse-snapshots/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 	<dependencies>
 		<dependency>
 			<groupId>org.openjfx</groupId>
@@ -27,39 +41,8 @@
 			<artifactId>javafx-fxml</artifactId>
 			<version>12.0.2</version>
 		</dependency>
-		<dependency>
-			<groupId>org.openjfx</groupId>
-			<artifactId>javafx-graphics</artifactId>
-			<version>11.0.2</version>
-			<classifier>mac</classifier>
-		</dependency>
-		<dependency>
-			<groupId>org.openjfx</groupId>
-			<artifactId>javafx-controls</artifactId>
-			<version>11.0.2</version>
-			<classifier>mac</classifier>
-		</dependency>
-		<dependency>
-			<groupId>org.openjfx</groupId>
-			<artifactId>javafx-fxml</artifactId>
-			<version>11.0.2</version>
-			<classifier>mac</classifier>
-		</dependency>
-		<dependency>
-			<groupId>org.openjfx</groupId>
-			<artifactId>javafx.base</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${sdk}/lib/javafx.base.jar</systemPath>
-		</dependency>
-		<dependency>
-			<groupId>org.openjfx</groupId>
-			<artifactId>javafx.graphics</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${sdk}/lib/javafx.graphics.jar</systemPath>
-		</dependency>
+
 	</dependencies>
-	
+
 
 </project>
