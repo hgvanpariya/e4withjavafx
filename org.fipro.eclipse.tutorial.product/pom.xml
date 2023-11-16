@@ -27,7 +27,7 @@
 				<configuration>
 					<profile>org.fipro.eclipse.tutorial.app.product</profile>
 					<formats>
-						<linux>zip</linux>
+					<!--	<linux>zip</linux> -->
 						<macosx>tar.gz</macosx>
 					</formats>
 					<products>
