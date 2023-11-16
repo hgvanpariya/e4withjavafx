@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde?>
-<!-- generated with https://github.com/eclipse-cbi/targetplatform-dsl --><target name="E4 Cookbook Target Platform" sequenceNumber="1568034040">
+<!-- generated with https://github.com/eclipse-cbi/targetplatform-dsl --><target includeMode="feature" name="E4 Cookbook Target Platform" sequenceNumber="1568034040">
   <locations>
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.sdk.feature.group" version="4.12.0.v20190605-1801"/>
@@ -21,5 +21,10 @@
 		  <unit id="openjfx.swt.feature.feature.group" version="11.0.0.201901231300"/>
 		  <unit id="openjfx.web.feature.feature.group" version="11.0.0.201901231300"/>
 	  </location>
+	  <location path="/Users/jankihari/software/javafx-sdk-17.0.9/lib" type="Directory"/>
   </locations>
+	<targetJRE path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.launching.macosx.MacOSXType/BellSoft Liberica JDK 19.0.2+9 [19.0.2+9]"/>
+	<launcherArgs>
+		<vmArgs>-Dosgi.framework.extensions=org.eclipse.fx.osgi</vmArgs>
+	</launcherArgs>
 </target>

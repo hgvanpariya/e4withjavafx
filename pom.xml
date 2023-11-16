@@ -18,6 +18,7 @@
             <url>http://download.eclipse.org/releases/latest/</url>
             <layout>p2</layout>
         </repository>
+      
         
     </repositories>
     <build>
@@ -308,9 +309,11 @@
         </plugins>
     </build>
     <modules>
-    <module>org.fipro.eclipse.tutorial.app</module>
     <module>org.fipro.eclipse.tutorial.target</module>
-    <module>org.fipro.eclipse.tutorial.inverter</module>
     <module>org.fipro.eclipse.tutorial.feature</module>
+    <module>org.fipro.eclipse.tutorial.inverter</module>
+    <module>org.fipro.eclipse.tutorial.app</module>
+
+    
   </modules>
 </project>

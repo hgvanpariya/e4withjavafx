@@ -1,13 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <parent>
-	  <groupId>org.fipro.eclipse.tutorial</groupId>
-    <artifactId>jfxparent</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
- </parent>
-    <modelVersion>4.0.0</modelVersion>
- <artifactId>org.fipro.eclipse.tutorial.inverter</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-    <packaging>eclipse-plugin</packaging>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<parent>
+		<groupId>org.fipro.eclipse.tutorial</groupId>
+		<artifactId>jfxparent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>org.fipro.eclipse.tutorial.inverter</artifactId>
+	<packaging>eclipse-plugin</packaging>
+	<properties>
+		<sdk>/Users/jankihari/software/javafx-sdk-17.0.9/</sdk>
+	</properties>
+	
+
+	<dependencies>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-controls</artifactId>
+			<version>12.0.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-fxml</artifactId>
+			<version>12.0.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-graphics</artifactId>
+			<version>11.0.2</version>
+			<classifier>mac</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-controls</artifactId>
+			<version>11.0.2</version>
+			<classifier>mac</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-fxml</artifactId>
+			<version>11.0.2</version>
+			<classifier>mac</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx.base</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${sdk}/lib/javafx.base.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx.graphics</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${sdk}/lib/javafx.graphics.jar</systemPath>
+		</dependency>
+	</dependencies>
+	
 
 </project>
