@@ -344,7 +344,6 @@
 		<module>org.fipro.eclipse.tutorial.feature</module>
 		<module>org.fipro.eclipse.tutorial.inverter</module>
 		<module>org.fipro.eclipse.tutorial.app</module>
-
-
+		<module>org.fipro.eclipse.tutorial.product</module>
 	</modules>
 </project>
