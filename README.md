@@ -4,10 +4,13 @@ A RCP Demo Project with Java Version, JavaFX and, OSGI
 
 
 ## Quickstart
-Download JavaFX 11 and set to following path
+Download JRE 8 and set to following path
+
+https://github.com/hgvanpariya/e4withjavafx/blob/master/rcp.demo.plugin.application/pom.xml#L13
 
 ```
-export JAVAFX_PATH=/path/of/javafx/lib/
+		<JAVAFX_HOME>C:\Program Files\Java\jre1.8.0_202\</JAVAFX_HOME>
+
 ```
 
 Running on Windows and Linux environment or Mac (at least):
