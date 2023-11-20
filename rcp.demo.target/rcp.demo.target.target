@@ -22,6 +22,27 @@
 			<unit id="org.eclipse.jubula.feature.launch.java.feature.group" version="7.0.3.201906040810"/>
 			<unit id="org.eclipse.jubula.feature.launch.rcp.feature.group" version="7.0.3.201906040810"/>
 			<unit id="org.eclipse.jubula.feature.source.feature.group" version="7.0.3.201906040810"/>
+			<unit id="org.eclipse.emf.edit.feature.group" version="2.15.0.v20190528-0725"/>
+			<unit id="org.eclipse.equinox.sdk.feature.group" version="3.18.0.v20190528-1257"/>
+		</location>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+			<repository location="http://download.eclipse.org/efxclipse/runtime-released/3.7.0/site"/>
+			<unit id="org.eclipse.fx.target.rcp4.feature.feature.group" version="3.7.0.202010120723"/>
+			<unit id="org.eclipse.fx.target.rcp.feature.feature.group" version="3.7.0.202010120723"/>
+			<unit id="org.eclipse.fx.runtime.min.feature.feature.group" version="3.7.0.202010120720"/>
+		</location>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+			<repository location="http://downloads.efxclipse.bestsolution.at/p2-repos/openjfx-11/repository/"/>
+			<unit id="openjfx.media.feature.feature.group" version="11.0.0.201901231300"/>
+			<unit id="openjfx.standard.feature.feature.group" version="11.0.0.201901231300"/>
+			<unit id="openjfx.swing.feature.feature.group" version="11.0.0.201901231300"/>
+			<unit id="openjfx.swt.feature.feature.group" version="11.0.0.201901231300"/>
+			<unit id="openjfx.web.feature.feature.group" version="11.0.0.201901231300"/>
+		</location>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+			<repository location="http://download.eclipse.org/efxclipse/runtime-released/3.7.0/site"/>
+			<unit id="org.eclipse.fx.target.rcp.feature.feature.group" version="3.7.0.202010120723"/>
+			<unit id="org.eclipse.fx.target.rcp4.feature.feature.group" version="3.7.0.202010120723"/>
 		</location>
 	</locations>
 </target>

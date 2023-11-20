@@ -29,6 +29,7 @@ import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.graphics.Font;
+import org.eclipse.swt.graphics.FontData;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
@@ -61,22 +62,22 @@ public class CalculatorPart
     {
         parent.setLayout(new GridLayout(1, true));
 
-        final var txtInput = new Text(parent, 0);
+        final Text txtInput = new Text(parent, 0);
         txtInput.setData(UIConstants.TEST_COMP_NAME.name(), UIConstants.CALCULATOR_INPUT.name());
         txtInput.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1));
 
-        final var btnCalculator = new Button(parent, 0);
+        final Button btnCalculator = new Button(parent, 0);
         btnCalculator.setData(UIConstants.TEST_COMP_NAME.name(), UIConstants.CALCULATOR_RUN.name());
         btnCalculator.setLayoutData(new GridData(SWT.FILL, 0, true, true, 1, 1));
         btnCalculator.setText("Calculate");
 
-        final var txtResult = new Text(parent, SWT.SHADOW_IN);
+        final Text txtResult = new Text(parent, SWT.SHADOW_IN);
         txtResult.setData(UIConstants.TEST_COMP_NAME.name(), UIConstants.CALCULATOR_RESULT.name());
         txtResult.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1));
         txtResult.setEditable(false);
 
-        final var font = txtResult.getFont();
-        final var fontData = font.getFontData();
+        final Font font = txtResult.getFont();
+        FontData[] fontData = font.getFontData();
         fontData[0].setHeight(FONT_HEIGHT);
         txtResult.setFont(new Font(parent.getDisplay(), fontData));
 
@@ -91,8 +92,8 @@ public class CalculatorPart
                 final ICalculatorService calculatorService
                     = Activator.getContext().getService(reference);
 
-                final var value = Double.valueOf(txtInput.getText());
-                final var squareResult = calculatorService.square(value);
+                final Double value = Double.valueOf(txtInput.getText());
+                final Double squareResult = calculatorService.square(value);
                 txtResult.setText("Square(" + value + ") = " + squareResult);
 
                 Activator.getContext().ungetService(reference);

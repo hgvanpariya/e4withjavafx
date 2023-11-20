@@ -6,7 +6,6 @@ Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: rcp.demo.plugin.calculator.Activator
 Require-Bundle: org.eclipse.core.runtime
 Automatic-Module-Name: rcp.demo.plugin.calculator
-Bundle-RequiredExecutionEnvironment: JavaSE-9,
- JavaSE-10
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: rcp.demo.plugin.calculator
 Bundle-ActivationPolicy: lazy

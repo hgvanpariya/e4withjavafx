@@ -9,7 +9,61 @@
 		<version>1.0.0-SNAPSHOT</version>
 		<relativePath>../rcp.demo.build</relativePath>
 	</parent>
+	<properties>
+		<JAVAFX_HOME>C:\Program Files\Java\jre1.8.0_202\</JAVAFX_HOME>
+	</properties>
 
 	<artifactId>rcp.demo.plugin.application</artifactId>
 	<packaging>eclipse-plugin</packaging>
+	<dependencies>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-controls</artifactId>
+			<version>11</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-fxml</artifactId>
+			<version>11</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-base</artifactId>
+			<version>11</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-graphics</artifactId>
+			<version>11</version>
+		</dependency>
+		<dependency>
+			<!-- GroupId/ArtifactId/Version doesn't matter unless it clashes. -->
+			<groupId>jfxswt</groupId>
+			<artifactId>jfxswt</artifactId>
+			<version>1.8</version>
+			<scope>system</scope>
+			<systemPath>C:\Program Files\Java\jre1.8.0_202\lib\jfxswt.jar</systemPath>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-compiler-plugin</artifactId>
+				<version>1.4.0</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<extraClasspathElements>
+						<extraClasspathElement>
+							<groupId>com.oracle</groupId>
+							<artifactId>javafx</artifactId>
+							<version>8.0.0-SNAPSHOT</version>
+							<systemPath>${JAVAFX_HOME}\lib\jfxswt.jar</systemPath>
+							<scope>system</scope>
+						</extraClasspathElement>
+					</extraClasspathElements>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
