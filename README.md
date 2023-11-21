@@ -16,9 +16,18 @@ https://github.com/hgvanpariya/e4withjavafx/blob/master/rcp.demo.plugin.applicat
 Running on Windows and Linux environment or Mac (at least):
 
 ```
-mvn clean install -Dorg.osgi.framework.bundle.parent=ext -Dosgi.framework.extensions=org.eclipse.fx.osgi
+cd  rcp.demo.build
+mvn clean install
 
 ```
+
+Once Maven command is successful fo to following directory
+```
+rcp.demo.product/target/products/rcp.demo.plugin.application.id/win32/win32/x86_64/
+```
+
+then Run the `eclipse.exe` file.
+
 
 The rcp.demo.product/target folder will contain then all three distributions:
 
