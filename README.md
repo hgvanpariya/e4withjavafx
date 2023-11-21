@@ -4,10 +4,23 @@ A RCP Demo Project with Java Version, JavaFX and, OSGI
 
 
 ## Quickstart
+Download JDK 8 and set following environment variables.
+
+set JDK 8 to PATH variable.
+set JDK 8 to JAVA_HOME variable.
+
 Download JRE 8 and set to following path
+
+Clone repo to local
+
+```
+git clone git@github.com:hgvanpariya/e4withjavafx.git
+cd e4withjavafx
+```
 
 https://github.com/hgvanpariya/e4withjavafx/blob/master/rcp.demo.plugin.application/pom.xml#L13
 
+File Path : `rcp.demo.plugin.application/pom.xml`
 ```
 		<JAVAFX_HOME>C:\Program Files\Java\jre1.8.0_202\</JAVAFX_HOME>
 
